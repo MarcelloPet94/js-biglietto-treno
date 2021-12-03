@@ -20,11 +20,13 @@ console.log(verifyAge + "anni");
 let triPrice = tripKm * 0.21;
 console.log("Prezzo intero" + " " + triPrice + currency);
 
-/* user output */
+/* user name output */
+userData.innerHTML = userNameOutput;
+
+/* user age output */
 if (verifyAge <= 18) {
     let undergradeSale = (triPrice * 20) / 100;
     let priceUndergrade = triPrice - undergradeSale;
-    userData.innerHTML = userNameOutput;
     userTicket.innerHTML = priceUndergrade.toFixed(2) + currency;
     sale.innerHTML = "20% di sconto";
 }
@@ -32,12 +34,10 @@ if (verifyAge <= 18) {
 else if (verifyAge >= 65) {
     let overSale = (triPrice * 40) / 100;
     let priceOver = triPrice - overSale;
-    userData.innerHTML = userNameOutput;
     userTicket.innerHTML = priceOver.toFixed(2) + currency;   
     sale.innerHTML = "40% di sconto"; 
 }
 
 else {
-    userData.innerHTML = userNameOutput;
     userTicket.innerHTML = triPrice.toFixed(2) + currency;
 }
