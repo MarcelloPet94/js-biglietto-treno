@@ -1,0 +1,15 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.order {
+    margin: 10% auto;
+    width: 500px;
+    height: auto;
+    padding: 24px;
+}
+
+.sale {color: red;}
